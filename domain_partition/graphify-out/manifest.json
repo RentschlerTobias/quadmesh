@@ -1,0 +1,262 @@
+{
+  "/home/t1dde/Work/repos/domain_partition/csme_data_generator.py": {
+    "mtime": 1778985105.9769652,
+    "ast_hash": "17a6f5926e2572762dd16c36c7e053b7",
+    "semantic_hash": "17a6f5926e2572762dd16c36c7e053b7"
+  },
+  "/home/t1dde/Work/repos/domain_partition/csme_plots.py": {
+    "mtime": 1778985105.9769652,
+    "ast_hash": "fd2c307512203c76df0e4a9510937588",
+    "semantic_hash": "fd2c307512203c76df0e4a9510937588"
+  },
+  "/home/t1dde/Work/repos/domain_partition/data_generator.py": {
+    "mtime": 1778985105.9769652,
+    "ast_hash": "52f9bc5a8b4ea5db418f24c1406f0f30",
+    "semantic_hash": "52f9bc5a8b4ea5db418f24c1406f0f30"
+  },
+  "/home/t1dde/Work/repos/domain_partition/main.py": {
+    "mtime": 1778985106.0763967,
+    "ast_hash": "f2bf68bfc8299e01cf72f2bf891c4132",
+    "semantic_hash": "f2bf68bfc8299e01cf72f2bf891c4132"
+  },
+  "/home/t1dde/Work/repos/domain_partition/plot_evaluation.py": {
+    "mtime": 1778985106.0773966,
+    "ast_hash": "043372b2d3335f0eb689749a4f9857f8",
+    "semantic_hash": "043372b2d3335f0eb689749a4f9857f8"
+  },
+  "/home/t1dde/Work/repos/domain_partition/quadmesh_generator.py": {
+    "mtime": 1778985106.0773966,
+    "ast_hash": "868194d5d4222f3e3b9d7535de7a5c71",
+    "semantic_hash": "868194d5d4222f3e3b9d7535de7a5c71"
+  },
+  "/home/t1dde/Work/repos/domain_partition/test.py": {
+    "mtime": 1778985106.0773966,
+    "ast_hash": "9d3bcf35931cba4848eecd8a6e2887b2",
+    "semantic_hash": "9d3bcf35931cba4848eecd8a6e2887b2"
+  },
+  "/home/t1dde/Work/repos/domain_partition/test_v2.py": {
+    "mtime": 1778985106.0773966,
+    "ast_hash": "cfe855c37de7c56360b8cb0faea6490c",
+    "semantic_hash": "cfe855c37de7c56360b8cb0faea6490c"
+  },
+  "/home/t1dde/Work/repos/domain_partition/fieldgen/fieldgen_post.py": {
+    "mtime": 1778985105.9769652,
+    "ast_hash": "db6876c375f0ac3b0344ec03747e858c",
+    "semantic_hash": "db6876c375f0ac3b0344ec03747e858c"
+  },
+  "/home/t1dde/Work/repos/domain_partition/fieldgen/fieldgen_pre.py": {
+    "mtime": 1778985105.9772336,
+    "ast_hash": "27fafa6e93b956d5c48a8cbfea586446",
+    "semantic_hash": "27fafa6e93b956d5c48a8cbfea586446"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/__init__.py": {
+    "mtime": 1778985106.0773966,
+    "ast_hash": "1e1d2602af8e7280bf71645c1e086647",
+    "semantic_hash": "1e1d2602af8e7280bf71645c1e086647"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/check_mesh.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "5f74c2096a39baf1068557c2222cb806",
+    "semantic_hash": "5f74c2096a39baf1068557c2222cb806"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/frame_field.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "bfc6cbfdaf6cb611d48bbbc016ab884d",
+    "semantic_hash": "bfc6cbfdaf6cb611d48bbbc016ab884d"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/import_obj_to_torch.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "c42f6119c66f565a7683f8382db37684",
+    "semantic_hash": "c42f6119c66f565a7683f8382db37684"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/mesh_generator.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "4292ea589fa9b8d4165542dfc2ae57da",
+    "semantic_hash": "4292ea589fa9b8d4165542dfc2ae57da"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/naca_airfoil.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "b2230cb416d552721ffcdabe7b3ce6f7",
+    "semantic_hash": "b2230cb416d552721ffcdabe7b3ce6f7"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/plotting_tools.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "201e716d5880c9261d915d589a0871b6",
+    "semantic_hash": "201e716d5880c9261d915d589a0871b6"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/save_load.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "b10ac1f38ab8f4e6b81531bd57736124",
+    "semantic_hash": "b10ac1f38ab8f4e6b81531bd57736124"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/separatrix_generator.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "bf3ad651fb35b9193fe39456d83df3d0",
+    "semantic_hash": "bf3ad651fb35b9193fe39456d83df3d0"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/separatrix_generator_v2.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "4d70ea5ec9db631a339040af07295e7f",
+    "semantic_hash": "4d70ea5ec9db631a339040af07295e7f"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/separatrix_generator_v2_backup.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "4d70ea5ec9db631a339040af07295e7f",
+    "semantic_hash": "4d70ea5ec9db631a339040af07295e7f"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/simplificator_tools.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "863c6c57e82e41c19b992213284a2318",
+    "semantic_hash": "863c6c57e82e41c19b992213284a2318"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/simplificator_v3.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "fdcf1c56c99a18350275b33fec7a3791",
+    "semantic_hash": "fdcf1c56c99a18350275b33fec7a3791"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/singularity_detection.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "a4103b1c4d5e40dac07ef10e2344257e",
+    "semantic_hash": "a4103b1c4d5e40dac07ef10e2344257e"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/singularity_detector.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "91ad647182c79e2b1edbc6e396cd226c",
+    "semantic_hash": "91ad647182c79e2b1edbc6e396cd226c"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/spline_interpolation.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "30d389a50b2be3d35675af8c99c41cac",
+    "semantic_hash": "30d389a50b2be3d35675af8c99c41cac"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/streamline_generator.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "c5b1d61ea34fbd48b02444b8a1cbad05",
+    "semantic_hash": "c5b1d61ea34fbd48b02444b8a1cbad05"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/streamline_generator_v2.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "0d0301931f7971f378b10764d6c24901",
+    "semantic_hash": "0d0301931f7971f378b10764d6c24901"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/streamline_intersection_splitter.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "0145581eb2a01039ac4a99f0fb28a7ad",
+    "semantic_hash": "0145581eb2a01039ac4a99f0fb28a7ad"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/streamline_merging.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "76e480a89839b2acda41af8f4227699e",
+    "semantic_hash": "76e480a89839b2acda41af8f4227699e"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/streamline_post_processor.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "43d390c146f886c182c59c832f70ec1f",
+    "semantic_hash": "43d390c146f886c182c59c832f70ec1f"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/streamline_simplificator.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "ea5fdf1aa481ecbfc68187dea74a87b8",
+    "semantic_hash": "ea5fdf1aa481ecbfc68187dea74a87b8"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/streamline_simplificator_v2.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "ce72aacbb422f139c4e96ba5a8e2e371",
+    "semantic_hash": "ce72aacbb422f139c4e96ba5a8e2e371"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/streamline_splitter.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "a8352de1ab756bed4b87b94413b65071",
+    "semantic_hash": "a8352de1ab756bed4b87b94413b65071"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/streamlines_to_quad_faces.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "9410d6b0f57dd97b6aaa9d3d3b295563",
+    "semantic_hash": "9410d6b0f57dd97b6aaa9d3d3b295563"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/transfinite_interpolation.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "b7959659cc1fac93a1e038f75ad818a9",
+    "semantic_hash": "b7959659cc1fac93a1e038f75ad818a9"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/transfinite_quadMesh_generator.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "1667222b2ecae63e6685760c30e6ef18",
+    "semantic_hash": "1667222b2ecae63e6685760c30e6ef18"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools/streamline_tools/separatix_generator.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "8bf6a436e1c4133a5b725f5c81abd176",
+    "semantic_hash": "8bf6a436e1c4133a5b725f5c81abd176"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/__init__.py": {
+    "mtime": 1778985106.0793967,
+    "ast_hash": "71bf60a5716262a9febc92d7f8cce2d6",
+    "semantic_hash": "71bf60a5716262a9febc92d7f8cce2d6"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/frame_field.py": {
+    "mtime": 1778985106.0808399,
+    "ast_hash": "2c1c918d32cf577de67d386b7d42fe7b",
+    "semantic_hash": "2c1c918d32cf577de67d386b7d42fe7b"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/mesh_generator.py": {
+    "mtime": 1778985106.0808399,
+    "ast_hash": "dd63f8332ad8e8710f091148486fac4b",
+    "semantic_hash": "dd63f8332ad8e8710f091148486fac4b"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/naca_airfoil.py": {
+    "mtime": 1778985106.0808399,
+    "ast_hash": "47ea8217289ce33002e0080583005f4c",
+    "semantic_hash": "47ea8217289ce33002e0080583005f4c"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/plotting_tools.py": {
+    "mtime": 1778985106.0808399,
+    "ast_hash": "3de3eda967914d72565bf79700013e4b",
+    "semantic_hash": "3de3eda967914d72565bf79700013e4b"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/separatrix_generator.py": {
+    "mtime": 1778985106.0808399,
+    "ast_hash": "a4fc02d80fc9ed3a5ca1100e94bef42b",
+    "semantic_hash": "a4fc02d80fc9ed3a5ca1100e94bef42b"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/singularity_detection.py": {
+    "mtime": 1778985106.0808399,
+    "ast_hash": "a4103b1c4d5e40dac07ef10e2344257e",
+    "semantic_hash": "a4103b1c4d5e40dac07ef10e2344257e"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/singularity_detector.py": {
+    "mtime": 1778985106.0808399,
+    "ast_hash": "91ad647182c79e2b1edbc6e396cd226c",
+    "semantic_hash": "91ad647182c79e2b1edbc6e396cd226c"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/streamline_generator.py": {
+    "mtime": 1778985106.0808399,
+    "ast_hash": "68b329da9893e34099c7d8ad5cb9c940",
+    "semantic_hash": "68b329da9893e34099c7d8ad5cb9c940"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/streamline_tools/__init__.py": {
+    "mtime": 1778985106.0808399,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/streamline_tools/detect_singularities.py": {
+    "mtime": 1778985106.081305,
+    "ast_hash": "a4103b1c4d5e40dac07ef10e2344257e",
+    "semantic_hash": "a4103b1c4d5e40dac07ef10e2344257e"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/streamline_tools/init_streamlines.py": {
+    "mtime": 1778985106.081305,
+    "ast_hash": "bb271045448fb4741563cc97aec92c90",
+    "semantic_hash": "bb271045448fb4741563cc97aec92c90"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/streamline_tools/separatix_generator.py": {
+    "mtime": 1778985106.081305,
+    "ast_hash": "8bf6a436e1c4133a5b725f5c81abd176",
+    "semantic_hash": "8bf6a436e1c4133a5b725f5c81abd176"
+  },
+  "/home/t1dde/Work/repos/domain_partition/tools_old/tools_frame_field/compute_frame_field.py": {
+    "mtime": 1778985106.0813565,
+    "ast_hash": "ce1ebbe8c208b1a88eadae99a2401b3c",
+    "semantic_hash": "ce1ebbe8c208b1a88eadae99a2401b3c"
+  }
+}

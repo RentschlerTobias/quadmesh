@@ -1,0 +1,69 @@
+Error   : Curve loop 14 is wrong
+Error   : Something wrong in boundary mesh of transfinite surface 1
+Warning : Impossible to recover edge 452 452 (error tag -1)
+Warning : Impossible to recover edge 454 454 (error tag -1)
+Warning : Impossible to recover edge 456 456 (error tag -1)
+Warning : Impossible to recover edge 456 456 (error tag -1)
+Warning : Impossible to recover edge 454 454 (error tag -1)
+Warning : Impossible to recover edge 456 456 (error tag -1)
+Warning : Impossible to recover edge 463 463 (error tag -1)
+Warning : Impossible to recover edge 451 451 (error tag -1)
+Warning : Impossible to recover edge 460 460 (error tag -1)
+Error   : Unable to recover the edge 565 (21/74) on curve 5 (on surface 1)
+Error   : Curve loop 4 is wrong
+Error   : Curve loop 3 is wrong
+Error   : Something wrong in boundary mesh of transfinite surface 1
+Error   : Curve loop 4 is wrong
+Error   : Curve loop 11 is wrong
+Error   : Curve loop 1 is wrong
+Error   : Curve loop 1 is wrong
+Error   : Something wrong in boundary mesh of transfinite surface 1
+Error   : Something wrong in boundary mesh of transfinite surface 4
+Error   : Curve loop 14 is wrong
+Error   : Curve loop 2 is wrong
+Error   : Curve loop 3 is wrong
+Error   : Something wrong in boundary mesh of transfinite surface 1
+Error   : Curve loop 2 is wrong
+Error   : Something wrong in boundary mesh of transfinite surface 1
+Error   : Curve loop 11 is wrong
+Error   : Something wrong in boundary mesh of transfinite surface 11
+Error   : Curve loop 6 is wrong
+Error   : Curve loop 4 is wrong
+Error   : Curve loop 7 is wrong
+Error   : Something wrong in boundary mesh of transfinite surface 1
+Warning : Impossible to recover edge 435 435 (error tag -1)
+Warning : Impossible to recover edge 442 442 (error tag -1)
+Warning : Impossible to recover edge 435 435 (error tag -1)
+Warning : Impossible to recover edge 446 446 (error tag -1)
+Error   : Curve loop 4 is wrong
+Warning : Impossible to recover edge 428 428 (error tag -1)
+Warning : Impossible to recover edge 428 428 (error tag -1)
+Warning : Impossible to recover edge 423 423 (error tag -1)
+Warning : Impossible to recover edge 433 433 (error tag -1)
+Error   : Unable to recover the edge 530 (36/70) on curve 4 (on surface 1)
+Error   : Something wrong in boundary mesh of transfinite surface 1
+Error   : Something wrong in boundary mesh of transfinite surface 1
+Error   : Curve loop 1 is wrong
+Warning : Impossible to recover edge 426 426 (error tag -1)
+Warning : Impossible to recover edge 431 431 (error tag -1)
+Warning : Impossible to recover edge 431 431 (error tag -1)
+Warning : Impossible to recover edge 438 438 (error tag -1)
+Warning : Impossible to recover edge 433 433 (error tag -1)
+Warning : Impossible to recover edge 437 437 (error tag -1)
+Error   : Unable to recover the edge 542 (23/67) on curve 5 (on surface 1)
+Error   : Curve loop 1 is wrong
+Error   : Curve loop 2 is wrong
+Error   : Curve loop 1 is wrong
+Error   : Curve loop 4 is wrong
+Warning : Could not orient normal of surface 2
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Error   : Curve loop 22 is wrong
+Error   : Curve loop 4 is wrong
+Error   : Curve loop 2 is wrong
+Error   : Curve loop 13 is wrong
+Error   : Curve loop 1 is wrong

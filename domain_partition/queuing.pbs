@@ -1,0 +1,19 @@
+#!/bin/sh
+
+#PBS -N DataGenMesh
+#PBS -l walltime=48:00:00
+#PBS -l nodes=mars.ihs.uni-stuttgart.de:ppn=8
+# go to submit directory
+
+cd $PBS_O_WORKDIR
+
+cd /mnt/fs2/home/trentschler/strent/repos/domain_partition
+
+source /mnt/scratch/trentschler/environments/python/env_ai/bin/activate
+export OSLO_LOCK_PATH=~/tmp
+
+export FOAM_SIGFPE=false
+
+python data_generator.py > output_mars.log
+
+deactivate
