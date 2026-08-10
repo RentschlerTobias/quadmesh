@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+*.out
+*.log
+*.msh
+*.step
+runData_*/
+output_*/
