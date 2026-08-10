@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quadmesh"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "numpy",
+    "gmsh",
+    "trimesh",
+    "networkx",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
