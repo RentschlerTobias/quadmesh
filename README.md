@@ -172,6 +172,16 @@ following publications:
 - The `optimizer/` repository (separate) consumes the meshes produced
   here for coupled CFD + eigenfrequency optimization via RL and DE.
 
+## Roadmap
+
+- **2D Polar Tokenization** (AIFLUIDS 2026) -- Polar coordinate
+  tokenization for quad meshes on turbomachinery boundaries.
+- **3D Hexaeder-Block** (Aug–Dez 2026) -- Extend tokenization to
+  full 3D hexahedral block structures on hub/shroud surfaces.
+- **Higher-Order Spline-Oberflächen** (Springer SPP-Buch 2027) --
+  Quad-spline patch representation for smooth higher-order surface
+  decomposition of cylindrical turbomachinery geometries.
+
 ## License
 
 Internal research code. Distribution and reuse are governed by the

@@ -41,7 +41,7 @@ def cut_streamlines(Streamlines,Singularities):
             sing_coord =  Singularity[id]['coords']
             if sing_coord is not None:
                 streamline_coords = Streamlines[key]["coords"]
-                distance = np.linalg.norm(streamline_coords - sing_coord axis=1)
+                distance = np.linalg.norm(streamline_coords - sing_coord, axis=1)
                 distance_min_idx = np.argmin(distance)
                 distance_min = distance[distance_min_idx]
                 cutted_streamline = streamline[:distance_min_idx, :]
