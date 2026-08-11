@@ -14,8 +14,7 @@ analysis:
 
 The package is a research deliverable of DFG SPP 2353 "Daring More
 Intelligence" and the primary contribution of the associated PhD thesis
-"KI-beschleunigte Blockstruktur-Generierung fuer multiphysikalische
-Optimierung von Turbomaschinen".
+
 
 ## Data pipeline
 
@@ -41,7 +40,7 @@ Optimierung von Turbomaschinen".
                   |     meshtron (Transformer)          |
                   |  tokenize -> hourglass transformer  |
                   |  -> detoken -> quad mesh            |
-                  |  (AIFLUIDS 26 polar tokenization)   |
+                  |  (AIFLUIDS 26 tokenization)   |
                   +-----------------+--------------------+
                                     |
                                     v
@@ -154,35 +153,30 @@ following publications:
   network predicting a smooth cross field on 2D planar domains with
   explicit singularity handling; published in the proceedings of the
   CSME conference 2025.
-- **AIFLUIDS 2026** -- Polar tokenization for quad meshes. Polar
-  coordinate tokenization that respects rotational symmetry on
-  turbomachinery boundaries; accepted at AIFLUIDS 2026 (Springer /
-  Open Access proceedings).
-- **Springer SPP-Buch 2027** -- 3D quad-spline block decomposition of
-  cylindrical turbomachinery surfaces. Extended treatment of the 3D
-  hub/shroud pipeline with quad-spline patches; planned contribution
-  to the DFG SPP 2353 Springer book (2027).
+- **AIFLUIDS 2026** -- Memory efficient tokenization for quad block-structured 
+  meshes. accepted at AIFLUIDS 2026 
 
-## Project context
+  ## Project context
 
 - DFG Priority Programme SPP 2353 "Daring More Intelligence",
   work packages WP4 (online optimization) and WP5 (3D meshing).
-- PhD thesis, Institut fuer Luft- und Raumfahrtantriebe und -systeme
-  (ILR), Universitat Stuttgart.
+- PhD thesis, Institute of Fluid Mechanics and Hydraulic Machinery 
+  (IHS), Universitat Stuttgart.
 - The `optimizer/` repository (separate) consumes the meshes produced
   here for coupled CFD + eigenfrequency optimization via RL and DE.
 
 ## Roadmap
 
-- **2D Polar Tokenization** (AIFLUIDS 2026) -- Polar coordinate
-  tokenization for quad meshes on turbomachinery boundaries.
-- **3D Hexaeder-Block** (Aug–Dez 2026) -- Extend tokenization to
-  full 3D hexahedral block structures on hub/shroud surfaces.
-- **Higher-Order Spline-Oberflächen** (Springer SPP-Buch 2027) --
+- **2D  Quad block-structured Tokenization** (AIFLUIDS 2026) -- Memory efficient tokenization 
+  for transformer of block-structured quad meshes on uniform flowchannel around a random naca profil.
+- ** Domain partition of 3D quad surfaces (3rd order quad meshes) ** (Aug–Dez 2026)
+  -- Extend  data generation pipline from 2d uniform flow channel with random naca profil 
+  to 3D spline surfaces (3rd order quadrilateral elements) block structures on hub/shroud surfaces.
   Quad-spline patch representation for smooth higher-order surface
   decomposition of cylindrical turbomachinery geometries.
+- **3D Higher-Order Spline-Surfaces Transformer* 
+  Transformer to gernerate Quad-spline patch 
 
-## License
-
-Internal research code. Distribution and reuse are governed by the
-rules of DFG SPP 2353 and the contributing institutions.
+  ## License
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
