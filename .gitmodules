@@ -1,0 +1,3 @@
+[submodule "meshtron"]
+	path = meshtron
+	url = git@github.com:RentschlerTobias/quadtron.git
