@@ -328,3 +328,26 @@ def test_passes_soft_thresholds():
 
     # Erzwinge Fail durch sehr strenge Toleranzen
     assert val.passes_soft_thresholds({"scaled_jacobian_min": 1.01}) is False
+
+
+# ------------------------------------------------------------------
+# Test 11: CLI strict-gate lehnt invalid Partition ab (Exit != 0)
+# ------------------------------------------------------------------
+def test_cli_strict_gate_rejects_invalid_partition(tmp_path):
+    """CLI --validate exits non-zero for an invalid partition under strict=True."""
+    coords = torch.tensor([
+        [0.0, 0.0],
+        [1.0, 0.0],
+        [1.0, 1.0],
+        [0.0, 1.0],
+    ], dtype=torch.float)
+    faces = torch.tensor([[0, 3, 2, 1]], dtype=torch.long).T
+    blocked = make_blocked_mesh(coords, faces)
+    tri = make_tri_mesh(coords, [(0, 1), (1, 2), (2, 3), (3, 0)])
+    sample = (blocked, tri)
+    path = tmp_path / "invalid.pt"
+    torch.save(sample, path)
+
+    from domain_partition.cli import main
+    rc = main(["--validate", "--input", str(path), "--strict"])
+    assert rc != 0

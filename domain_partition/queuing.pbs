@@ -2,14 +2,17 @@
 
 #PBS -N DataGenMesh
 #PBS -l walltime=48:00:00
-#PBS -l nodes=mars.ihs.uni-stuttgart.de:ppn=8
-# go to submit directory
+#PBS -l nodes=1:ppn=8
 
-cd $PBS_O_WORKDIR
+# USER INPUT REQUIRED: cluster paths vary. Set the following environment
+# variables before submitting, e.g.:
+#   qsub -v QUADMESH_WORKDIR=/path/to/domain_partition,QUADMESH_PYTHON_ENV=/path/to/venv/bin/activate queuing.pbs
+#
+#   QUADMESH_WORKDIR  - directory containing data_generator.py
+#   QUADMESH_PYTHON_ENV - path to the Python virtualenv activate script
 
-cd /mnt/fs2/home/trentschler/strent/repos/domain_partition
-
-source /mnt/scratch/trentschler/environments/python/env_ai/bin/activate
+cd "${QUADMESH_WORKDIR:?Please set QUADMESH_WORKDIR}"
+source "${QUADMESH_PYTHON_ENV:?Please set QUADMESH_PYTHON_ENV}"
 export OSLO_LOCK_PATH=~/tmp
 
 export FOAM_SIGFPE=false

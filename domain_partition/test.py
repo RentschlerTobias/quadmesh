@@ -66,8 +66,8 @@ def get_mesh():
         blocked_mesh                = streamlines_post_processed.quad_mesh
         tri_mesh                    = streamline.mesh
 
-        # --- Pre-Filter: Quad Partition Validator (Phase 1: strict=False) ---
-        validator                   = QuadPartitionValidator(blocked_mesh, tri_mesh, strict=False)
+        # --- Pre-Filter: Quad Partition Validator (Phase 2: strict=True) ---
+        validator                   = QuadPartitionValidator(blocked_mesh, tri_mesh, strict=True)
         if not validator.is_valid():
             print('failed: blocked mesh invalid (pre-filter)')
             print('\n'.join(validator.diagnostics()))
