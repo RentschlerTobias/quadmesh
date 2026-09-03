@@ -161,17 +161,22 @@ Each subdirectory is runnable on its own; the importable package is
 intended for downstream consumers (optimizer, MCP server, etc.).
 
 ```bash
-# 2D GNN frame-field training
-python domain_partition/main.py --config configs/2d_frame_field.yaml
+# 2D frame field / transfinite quad generation
+python domain_partition/cli.py --input meshes.pt --output quads.pt --divisions 3 4 5
 
 # 3D block partition on a turbomachinery volume mesh
 python domain_partition_3D/domain_partition.py \
     domain_partition_3D/data/T1_9/T1_9_ru_gridGmsh.msh \
     --part both --method ta --plots
 
-# Transformer-based quad mesh tokenization
-python meshtron/main.py --mode train --config configs/meshtron.yaml
+# Transformer-based quad mesh tokenization -- three families, three entry points
+python meshtron/train.py --sorting-strategy 1     # 2D quad transformer
+python meshtron/train_domain.py                   # block-partition variant
+python meshtron/chain_e2e.py --ep1 20 --ep2 25 --ep3 25   # Plan-B two-stage
 ```
+
+There is no `configs/` directory; each entry point is driven by CLI flags,
+and `meshtron/train.py` additionally accepts `--config <file>.json`.
 
 ## References
 
