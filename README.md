@@ -1,4 +1,5 @@
 # quadmesh
+The repo is currently being set up.
 
 AI-accelerated block-structured mesh generation for multi-physics
 turbomachinery optimization.
@@ -188,7 +189,7 @@ following publications:
 
 - DFG Priority Programme SPP 2353 "Daring More Intelligence",
   work packages WP4 (online optimization) and WP5 (3D meshing).
-- PhD thesis, Institute of Fluid Mechanics and Hydraulic Machinery 
+- PhD Candidate, Institute of Fluid Mechanics and Hydraulic Machinery 
   (IHS), Universitat Stuttgart.
 - The `optimizer/` repository (separate) consumes the meshes produced
   here for coupled CFD + eigenfrequency optimization via RL and DE.
