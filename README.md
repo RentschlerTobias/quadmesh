@@ -85,8 +85,8 @@ quadmesh/
 |   |-- main.py              # CLI entry: train / evaluate frame field
 |   |-- data_generator.py    # synthetic 2D shape / mesh synthesis
 |   |-- quadmesh_generator.py
+|   |-- cli.py               # CLI entry: env-var driven config
 |   |-- fieldgen/            # learned frame-field model + losses
-|   |-- jupyter_notebooks/   # exploratory notebooks
 |   `-- tests/
 |
 |-- domain_partition_3D/     # 3D data generation for turbomachinery
@@ -125,6 +125,19 @@ The three research code bases are kept as subdirectories with their
 own CLI entry points so that each can be developed and cited
 independently. The top-level `quadmesh/` package only re-exports the
 common utilities for shared imports.
+
+All three are **git submodules**, not plain directories:
+
+| Path | Upstream | Visibility |
+|------|----------|------------|
+| `domain_partition/`    | `RentschlerTobias/domain_partition` (HTTPS) | public |
+| `domain_partition_3D/` | `RentschlerTobias/domain_partition_3D` (SSH) | private |
+| `meshtron/`            | `RentschlerTobias/quadtron` (SSH) | private |
+
+Clone with `--recurse-submodules`, or run `git submodule update --init
+--recursive` in an existing checkout. The two private submodules use SSH
+URLs and need a key on the GitHub account; `domain_partition` is public
+and clones anonymously over HTTPS.
 
 ## Usage
 
@@ -177,6 +190,59 @@ following publications:
 - **3D Higher-Order Spline-Surfaces Transformer* 
   Transformer to gernerate Quad-spline patch 
 
-  ## License
+## Attribution
+
+`domain_partition`, `domain_partition_3D`, `presentations_privat` and
+`conference_papers` were migrated from the University of Stuttgart TIK
+GitLab to GitHub with their full commit history. Commit metadata was
+normalised in the process. This section records what changed and why, so
+the rewrite is auditable after the fact.
+
+**Linked addresses.** Contributions are attributed to
+`tobias.rentschler@ihs.uni-stuttgart.de` and `tobias-rentschler@gmx.de`.
+Both must be *verified* on the GitHub account — GitHub only counts a
+commit toward the contribution graph if its author address is verified
+and linked. Addresses that are not linked produce commits that display
+correctly but count for nobody.
+
+**Identity normalisation.** Historic commits carried machine-local
+identities from the institute cluster. These were rewritten with
+`git filter-repo` (metadata only — file contents and tree hashes are
+unchanged in `domain_partition_3D`, `presentations_privat` and
+`conference_papers`):
+
+| Old | New | Reason |
+|-----|-----|--------|
+| `tobis.rentschler@ihs.uni-stuttgart.de` | `tobias.rentschler@ihs.uni-stuttgart.de` | typo in the local git config |
+| `trentschler@{mars,reynolds,snickers,vellamo}.ihs.uni-stuttgart.de` | `tobias.rentschler@ihs.uni-stuttgart.de` | default `user@host` from cluster nodes |
+| `root@srv1715448.hstgr.cloud` | `tobias-rentschler@gmx.de` | commits made as root on a rented box |
+| author name `trentschler`, `root` | `Tobias Rentschler` | internal TIK username / system account |
+
+`ac136362@uni-stuttgart.de` (in `conference_papers`) was deliberately left
+untouched, as were all ~380 third-party contributor identities in the
+vendored reveal.js fork inside `presentations_privat`.
+
+**Default-branch caveat.** Only commits reachable from a repository's
+*default branch* appear in the contribution graph. Work that lives solely
+on side branches — `hermes`, `perf_opti`, `quadMesh`, `airfoil`,
+`framefield`, `manim_animation` in `domain_partition` — will never show
+up there, regardless of authorship. The branches are kept because they
+carry history, not for graph purposes.
+
+**Retroactive display.** GitHub dates contributions by commit date, not
+push date. The migrated commits therefore appear on their original days
+going back to the start of the TIK history, not on the migration date.
+
+**Known residue.** The same pre-normalisation addresses still exist in
+repositories that were already public before this migration — `quadmesh`
+itself, `eigenfrequencies`, and `fun/*`. Rewriting those would mean
+force-pushing published history, so it was deliberately not done. Two
+notebooks that used to live in `domain_partition/` and are still in this
+repository's history (`StreamlinePostProcessing.ipynb`, `Untitled.ipynb`)
+contain cluster paths in their stored cell outputs; they were removed
+from the working tree with the submodule migration but remain reachable
+in older `quadmesh` commits.
+
+## License
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
