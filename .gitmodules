@@ -4,3 +4,6 @@
 [submodule "domain_partition"]
 	path = domain_partition
 	url = https://github.com/RentschlerTobias/domain_partition.git
+[submodule "domain_partition_3D"]
+	path = domain_partition_3D
+	url = git@github.com:RentschlerTobias/domain_partition_3D.git
