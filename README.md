@@ -12,6 +12,12 @@ analysis:
 - `domain_partition_3D/` -- 3D data generation for turbomachinery surfaces
 - `meshtron/`            -- Transformer-based quad mesh tokenization
 
+`meshtron/` itself carries three independent model families, each with its
+own entry point: the original 2D quad transformer (`train.py`), the
+block-partition variant on domain data (`train_domain.py`), and the Plan-B
+two-stage architecture that separates topology from geometry
+(`chain_e2e.py`). See that submodule's README for the selectors.
+
 The package is a research deliverable of DFG SPP 2353 "Daring More
 Intelligence" and the primary contribution of the associated PhD thesis
 
@@ -102,7 +108,9 @@ quadmesh/
 |   `-- experimentell/       # Gmsh pipeline, 3D extrapolation
 |
 |-- meshtron/                # Transformer quad-mesh tokenization
-|   |-- main.py              # CLI entry
+|   |-- train.py             # CLI entry: --sorting-strategy {0,1,2,3}
+|   |-- train_domain.py      # CLI entry: block-partition variant
+|   |-- chain_e2e.py         # CLI entry: Plan-B two-stage chain
 |   |-- meshtron.py          # hourglass-transformer model
 |   |-- hourglass_transformer.py
 |   |-- attention.py         # attention variants
@@ -110,7 +118,8 @@ quadmesh/
 |   |-- point_encoder.py
 |   |-- faceCount_encoder.py
 |   |-- dataset.py
-|   |-- detoken.py           # token -> quad mesh decoder
+|   |-- tokenizer_v2.py      # 8 tokens/quad, four ordering strategies
+|   |-- prototype_twostage.py  # Plan-B tokenizer (vertices + face pointers)
 |   |-- half_edge.py         # half-edge mesh utilities
 |   `-- plotting_tools.py
 |
@@ -132,12 +141,18 @@ All three are **git submodules**, not plain directories:
 |------|----------|------------|
 | `domain_partition/`    | `RentschlerTobias/domain_partition` (HTTPS) | public |
 | `domain_partition_3D/` | `RentschlerTobias/domain_partition_3D` (SSH) | private |
-| `meshtron/`            | `RentschlerTobias/quadtron` (SSH) | private |
+| `meshtron/`            | `RentschlerTobias/quadtron` (HTTPS), tracks `main` | public |
 
 Clone with `--recurse-submodules`, or run `git submodule update --init
---recursive` in an existing checkout. The two private submodules use SSH
-URLs and need a key on the GitHub account; `domain_partition` is public
-and clones anonymously over HTTPS.
+--recursive` in an existing checkout. The two public submodules clone
+anonymously over HTTPS; only `domain_partition_3D` is private and needs an
+SSH key on the GitHub account.
+
+A submodule always pins an exact commit — that is what the `160000` gitlink
+in the tree stores, so `quadmesh@<commit>` always resolves to one specific
+state of each component. The `branch = main` entry for `meshtron` does not
+change that; it only tells `git submodule update --remote` where to read the
+new tip from. Moving a pin stays an explicit commit here.
 
 ## Usage
 
