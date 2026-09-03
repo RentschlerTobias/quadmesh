@@ -1,3 +1,6 @@
 [submodule "meshtron"]
 	path = meshtron
 	url = git@github.com:RentschlerTobias/quadtron.git
+[submodule "domain_partition"]
+	path = domain_partition
+	url = https://github.com/RentschlerTobias/domain_partition.git
